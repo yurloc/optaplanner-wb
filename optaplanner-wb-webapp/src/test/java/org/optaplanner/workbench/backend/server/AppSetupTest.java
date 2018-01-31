@@ -71,7 +71,7 @@ public class AppSetupTest {
                                                  "settings",
                                                  "")).thenReturn(new ConfigGroup());
 
-        ConfigItem configItem = new ConfigItem<>();
+        ConfigItem<String> configItem = new ConfigItem<>();
         configItem.setName("name");
         configItem.setName("value");
         when(configurationFactory.newConfigItem(anyString(),
