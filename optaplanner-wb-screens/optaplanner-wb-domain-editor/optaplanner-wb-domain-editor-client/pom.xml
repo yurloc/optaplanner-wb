@@ -36,14 +36,9 @@
   </properties>
 
   <dependencies>
-    <!-- dependencies added because of new illegal transitive dependency check -->
     <dependency>
       <groupId>org.gwtbootstrap3</groupId>
       <artifactId>gwtbootstrap3</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.gwtbootstrap3</groupId>
-      <artifactId>gwtbootstrap3-extras</artifactId>
     </dependency>
     <dependency>
       <groupId>org.uberfire</groupId>
@@ -90,20 +85,8 @@
       <artifactId>uberfire-commons</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.kie.soup</groupId>
-      <artifactId>kie-soup-commons</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.uberfire</groupId>
       <artifactId>uberfire-workbench-client</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.uberfire</groupId>
-      <artifactId>uberfire-commons-editor-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.uberfire</groupId>
-      <artifactId>uberfire-commons-editor-client</artifactId>
     </dependency>
 
     <dependency>
@@ -162,11 +145,6 @@
     </dependency>
 
     <dependency>
-      <groupId>org.optaplanner</groupId>
-      <artifactId>optaplanner-workbench-models-core</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>com.google.gwt.gwtmockito</groupId>
       <artifactId>gwtmockito</artifactId>
       <scope>test</scope>
@@ -185,6 +163,7 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- For CallerMock used in DomainEditorBaseTest -->
     <dependency>
       <groupId>org.uberfire</groupId>
       <artifactId>uberfire-testing-utils</artifactId>
