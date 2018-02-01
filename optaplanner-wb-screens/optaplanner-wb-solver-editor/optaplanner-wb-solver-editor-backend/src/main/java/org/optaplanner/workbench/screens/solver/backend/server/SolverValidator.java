@@ -17,6 +17,7 @@
 package org.optaplanner.workbench.screens.solver.backend.server;
 
 import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -24,7 +25,6 @@ import java.util.Set;
 import java.util.function.Predicate;
 import javax.inject.Inject;
 
-import com.google.common.base.Charsets;
 import org.drools.compiler.kie.builder.impl.InternalKieModule;
 import org.drools.compiler.kie.builder.impl.KieContainerImpl;
 import org.drools.compiler.kie.builder.impl.KieModuleKieProject;
@@ -105,7 +105,7 @@ public class SolverValidator {
     }
 
     private ByteArrayInputStream inputStream(final String content) {
-        return new ByteArrayInputStream(content.getBytes(Charsets.UTF_8));
+        return new ByteArrayInputStream(content.getBytes(StandardCharsets.UTF_8));
     }
 
     private List<ValidationMessage> buildSolver(final Path resourcePath,
