@@ -1309,6 +1309,9 @@
       <plugin>
         <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
+        <configuration>
+          <moduleName>org.optaplanner.workbench.OptaPlannerWorkbench</moduleName>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
