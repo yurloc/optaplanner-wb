@@ -31,11 +31,6 @@
   <name>OptaPlanner Workbench - WebApp</name>
   <description>OptaPlanner Workbench - WebApp</description>
 
-  <properties>
-    <!-- Add the absolute path for $JBOSS_HOME below to manage another instance -->
-    <errai.jboss.home>${project.build.directory}/wildfly-${version.org.jboss.errai.wildfly}</errai.jboss.home>
-  </properties>
-
   <dependencies>
     <!-- dependencies added because of new illegal transitive dependency check -->
     <dependency>
@@ -808,10 +803,6 @@
         <executions>
           <execution>
             <id>default-cli</id>
-            <goals>
-              <goal>start</goal>
-              <goal>deploy-only</goal>
-            </goals>
             <configuration>
               <jbossHome>${project.build.directory}/wildfly-${version.org.jboss.errai.wildfly}</jbossHome>
               <filename>optaplanner-wb-webapp</filename>
